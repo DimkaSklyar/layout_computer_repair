@@ -14,11 +14,405 @@ a
 		text-decoration: none
 	&:active
 		outline: none 0
-
+body
+	color: $default
 ul
 	margin: 0
 	padding: 0
 	list-style: none
+
+.page-header
+	border-top: 4px solid $accent
+	.top-header
+		padding: 40px 0
+	.bottom-header
+		border-top: 1px solid #f2f2f2
+
+.btn
+	font-size: 16px
+	padding: 17px 25px
+	min-width: 180px
+	text-transform: uppercase
+	color: #fff
+	border-radius: 5px
+	font-weight: bold
+	&-table
+		padding: 7px 25px
+	&-table,
+	&_default
+		background-color: $accent
+		&:hover
+			background-color: #272533
+			color: #fff
+	&_transparent
+		background-color: transparent
+		border: 1px solid #fff
+		&:hover
+			background-color: #fff
+			color: $accent
+			
+
+.logo
+	display: flex
+	align-items: center
+	span
+		line-height: 1
+		color: $accent
+		text-transform: uppercase
+		display: block
+		margin-left: 10px
+		font-size: 20px
+
+.header-address
+	display: flex
+	align-items: center
+	p
+		line-height: 1.2
+		margin-bottom: 0
+		font-size: 18px
+		font-weight: 200
+		a
+			color: $default
+			font-size: 20px
+			font-weight: 500
+	&__icon
+		color: $accent
+		font-size: 45px
+		margin-right: 20px
+		line-height: 1
+
+.nav
+	display: flex
+	&__item
+		margin: 15px 0
+		&:not(:last-child)
+			margin-right: 50px
+		a
+			font-size: 18px
+			font-weight: 500
+			color: $default
+			text-transform: uppercase
+			&:hover
+				color: $accent
+
+
+.slider
+	height: 80vh
+	background: url('../img/slider.jpg') no-repeat
+	background-size: cover
+	.container
+		height: 100%
+	.row
+		height: 100%
+	&__item
+		&__header
+			h2
+				font-weight: 400
+				font-size: 65px
+				line-height: 1
+			p
+				color: $accent
+				font-size: 45px
+				line-height: 1
+		&__desc
+			margin-bottom: 40px
+			p
+				color: $default
+				font-size: 16px
+				font-weight: 200
+
+.section
+	padding: 100px 0
+
+	&__header
+		text-align: center
+		margin-bottom: 100px
+		h2
+			font-weight: 400
+			font-size: 40px
+		p
+			font-size: 16px
+			width: 50%
+			margin: 0 auto
+
+.service
+	&__item
+		display: flex
+		margin-bottom: 80px
+
+	&__icon
+		color: $accent
+		font-size: 55px
+		line-height: 0
+		margin-right: 35px
+		min-width: 50px
+	&__desc
+		line-height: 1.1
+		h3
+			font-size: 22px
+			margin-bottom: 20px
+			font-weight: 400
+		p
+			color: #666666
+			font-weight: 200
+
+.banner
+	background-color: $accent
+	padding: 80px 0
+	h2
+		color: #fff
+		font-size: 40px
+		font-weight: 300
+
+.btn__wrap_right
+	text-align: right
+
+.way
+	&__item
+		border: 1px solid #e7e7e7
+		padding: 20px
+	&__number
+		font-size: 60px
+		font-weight: 200
+		color: $accent
+	h3
+		color: $default
+		font-weight: 500
+	p
+		font-size: 14px
+
+.testimonial
+	background: $accent
+	.section__header
+		color: #fff
+	
+	&__item
+		background-color: #fff
+		padding: 35px
+		text-align: center
+	&__photo
+		text-align: center
+		overflow: hidden
+		margin-bottom: 35px
+		img
+			border-radius: 50%
+	
+	&__problem
+		font-weight: 500
+		text-transform: capitalize
+	&__text
+		font-size: 16px
+		font-weight: 300
+	&__name
+		color: $accent
+		text-transform: capitalize
+		font-size: 22px
+
+.about
+	padding: 50px 0
+	h2
+		font-weight: 400
+		font-size: 35px
+	&_middle_desc
+		font-size: 16px
+		font-weight: 200
+	&_top_desc
+		font-size: 24px
+	&_bottom_desc
+		font-size: 20px
+		span
+			color: $accent
+	&_img
+		background: url('../img/about-decor-bcg.jpg') no-repeat
+		background-position: 100% 0
+		img
+			position: relative
+			top: 60px
+
+.ben
+	background-color: $accent
+	color: #fff
+	.benefist_inner
+		text-align: center
+	.benefist__number
+		font-size: 60px
+		font-weight: 300
+	.benefist__title
+		text-align: center
+		position: relative
+		padding-top: 20px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			width: 50px
+			height: 1px
+			background-color: #fff
+			left: 50%
+			transform: translateX(-50%)
+
+.price-section
+	.section__header
+		p
+			width: 65%
+
+.price-section
+	background-color: #f5f5f5
+	padding: 90px 0 130px
+	.price-wrapper
+		+media-breakpoint-down(sm)
+			min-width: 850px
+			overflow: auto
+		.price-table-head
+			width: 100%
+			background-color: #000
+			color: #fff
+			th
+				padding: 15px
+			th:nth-child(1)
+				width: 40%
+			th:nth-child(2)
+				width: 20%
+			th:nth-child(3)
+				width: 20%
+			th:nth-child(4)
+				width: 20%
+		.price-table-body-wrap
+			height: 740px
+			overflow-x: auto
+			margin-top: 0px
+			background-color: #fff
+			width: calc(100% - 1px)
+			.price-table-body
+				width: 100%
+				table-layout: fixed
+				tbody
+					width: 100%
+				td
+					padding: 15px
+				td:nth-child(1)
+					width: 40%
+				td:nth-child(2)
+					width: 20%
+				td:nth-child(3)
+					width: 20%
+				td:nth-child(4)
+					width: 20%
+				tr:nth-child(even)
+					background-color: #f3f3f3
+	.price-item-wrap
+		+media-breakpoint-down(sm)
+			min-width: 850px
+			overflow: auto
+		.price-item
+			color: #000
+			ul
+				text-align: center
+				display: flex
+				justify-content: space-between
+				width: 100%
+				align-items: flex-end
+				.nav-item
+					width: 100%
+					position: relative
+					background-color: #fff
+					flex-grow: 0
+					border-top-left-radius: 15px
+					border-top-right-radius: 15px
+					border: 1px solid #f2f2f2
+					a
+						color: #000
+						text-transform: uppercase
+					&:before
+						position: absolute
+						content: ''
+						top: 20px
+					.nav-link
+						transition: none
+						white-space: nowrap
+						+media-breakpoint-down(lg)
+							padding: 10px 5px
+					.nav-link.active
+						padding: 15px 0
+						box-shadow: 0 0 21px rgba(51,51,0,0.25)
+						z-index: 2
+						position: relative
+						border-top-left-radius: 15px
+						border-top-right-radius: 15px
+.ma-c
+	margin: 0 auto
+#pills-tabContent
+	box-shadow: 5px 20px 20px 0px #dddddd
+
+footer
+	background-color: #272533
+	padding: 80px 0
+	.social
+		display: flex
+		justify-content: center
+		li
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			background-color: $accent
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 10px
+			transition: .3s
+			&:hover
+				background-color: #fff
+			&:hover a
+				color: $accent
+			a
+				color: #fff
+				font-size: 20px
+				display: inline-block
+				width: 60px
+				height: 60px
+				text-align: center
+				line-height: 60px
+	.copyright
+		text-align: center
+		color: #666666
+		margin-top: 30px
+
+.input-form
+	width: 100%
+	color: #737373
+	background-color: #fff
+	border: 1px solid #e7e7e7
+	padding: 14px 18px
+	font-size: 16px
+	margin-bottom: 10px
+	&::-webkit-input-placeholder
+		color: #ccc
+.form_btn_wrapper
+	display: flex
+	justify-content: space-between
+	button
+		width: 47%
+		outline: 0 none
+		border: none
+		cursor: pointer
+.contact__item_map
+	position: relative
+address
+	background: rgba($accent,.8)
+	color: #fff
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	margin-bottom: 0
+	padding: 40px
+	.address_street
+		text-align: center
+	.header-address
+		justify-content: center
+		a
+			color: #fff
+			font-size: 40px
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
