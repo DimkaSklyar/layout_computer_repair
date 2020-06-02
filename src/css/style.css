@@ -8085,6 +8085,16 @@ ul {
   list-style: none;
 }
 
+.fixed {
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+}
+
 .page-header {
   border-top: 4px solid #0590ff;
 }
@@ -8184,6 +8194,7 @@ ul {
 }
 
 .nav {
+  position: sticky;
   display: flex;
 }
 
@@ -8592,7 +8603,7 @@ ul {
 }
 
 .price-section .price-wrapper .price-table-body-wrap .price-table-body td:nth-child(4) {
-  width: 26%;
+  width: 20%;
 }
 
 .price-section .price-wrapper .price-table-body-wrap .price-table-body tr:nth-child(even) {

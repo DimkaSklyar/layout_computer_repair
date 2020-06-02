@@ -22,7 +22,14 @@ ul
 	margin: 0
 	padding: 0
 	list-style: none
-
+.fixed
+	position: fixed
+	background-color: #fff
+	right: 0
+	left: 0
+	top: 0
+	z-index: 999
+	border-bottom: 1px solid #ccc
 .page-header
 	border-top: 4px solid $accent
 	.top-header
@@ -90,6 +97,7 @@ ul
 		line-height: 1
 
 .nav
+	position: sticky
 	display: flex
 	&__item
 		margin: 15px 0
@@ -333,7 +341,7 @@ ul
 				td:nth-child(3)
 					width: 20%
 				td:nth-child(4)
-					width: 26%
+					width: 20%
 				tr:nth-child(even)
 					background-color: #f3f3f3
 	.price-item-wrap
