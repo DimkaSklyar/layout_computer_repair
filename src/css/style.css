@@ -8850,6 +8850,16 @@ address .header-address a {
   cursor: pointer;
 }
 
+.help {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.help a {
+  text-decoration: underline;
+}
+
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
